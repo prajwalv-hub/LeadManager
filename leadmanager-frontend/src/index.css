@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f5f7fb;
+  color: #1f2937;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+/* Header */
+
+.header {
+  background: #111827;
+  color: white;
+  padding: 24px 40px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+.header p {
+  margin: 6px 0 0;
+  color: #9ca3af;
+}
+
+/* Main */
+
+.container {
+  padding: 35px 40px;
+  max-width: 1400px;
+  margin: auto;
+}
+
+/* Dashboard Cards */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+}
+
+.card-title {
+  color: #6b7280;
+  font-size: 15px;
+}
+
+.card-value {
+  font-size: 34px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Panel */
+
+.panel {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  overflow: hidden;
+}
+
+.panel-header {
+  padding: 24px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.panel-header h2 {
+  margin: 0;
+}
+
+.panel-header p {
+  margin: 6px 0 0;
+  color: #6b7280;
+}
+
+/* Table */
+
+.table-container {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 16px 20px;
+  text-align: left;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+th {
+  background: #f9fafb;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+td {
+  font-size: 14px;
+}
+
+/* Status */
+
+.status {
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.status.pending {
+  background: #fff7ed;
+  color: #c2410c;
+}
+
+.status.interested {
+  background: #ecfdf5;
+  color: #047857;
+}
+
+.status.not_interested {
+  background: #fef2f2;
+  color: #b91c1c;
+}
+
+/* Buttons */
+
+.actions {
+  display: flex;
+  gap: 8px;
+}
+
+button {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.interested {
+  background: #059669;
+  color: white;
+}
+
+.not-interested {
+  background: #dc2626;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+/* Mobile */
+
+@media (max-width: 800px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .header {
+    padding: 20px;
+  }
+}
